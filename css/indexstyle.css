@@ -1,9 +1,11 @@
+/* universal selector */
 * {
     margin: 0;
     padding: 0;
     font-family: Work Sans;
 }
 
+/* banner design */
 .banner {
     background-image: url(../images/banner/banner3.png);
     height: 800px;
@@ -34,6 +36,7 @@
     margin-bottom: 30px;
 }
 
+/* button design */
 .btn-primary {
     color: #005FAC;
     font-size: 20px;
@@ -42,12 +45,21 @@
     padding: 20px 25px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
+.btn-primary:hover {
+    background-color: lightcyan;
+    /* after button hover zoom effect */
+    transform: scale(1.1);
+}
+
+/* all main contain part follow below given padding */
 main {
     padding: 0 205px;
 }
 
+/* failure section design */
 .failure-container {
     display: flex;
     gap: 85px;
@@ -73,7 +85,10 @@ main {
     margin-bottom: 15px;
 }
 
+/* before use because need to add tick mark before every unordered list 
+item */
 .failure-details ul li::before {
+    /* this code represent tick mark symbol */
     content: '\2714\0020';
     color: green;
 }
@@ -86,6 +101,8 @@ main {
     margin-bottom: 8px;
 }
 
+/* plan section design */
+
 .plan-container {
     text-align: center;
     margin-bottom: 130px;
@@ -94,6 +111,7 @@ main {
 .plan-types {
     display: flex;
     gap: 85px;
+    /* using for horizontally center */
     justify-content: center;
 }
 
@@ -120,19 +138,153 @@ main {
     font-size: 25px;
     font-weight: 500;
 }
-.blending-image{
+/* bonus blending image section design */
+.blending-image {
     height: 270px;
+    /* just add to bg image */
     background-image: url(../images/gradient1.png), url(../images/watch.png);
     background-blend-mode: normal;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.blending-image-container{
+
+.blending-image-container {
     padding: 60px 0 0 65px;
 }
-.blending-image-title{
+
+.blending-image-title {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 25px;
+}
+/* developer section design */
+.developer {
+    margin-top: 90px;
+    height: 300px;
+    background-color: #212529;
+    box-shadow: 7px 7px 7px #212529;
+}
+
+.developer-container {
+    display: flex;
+    gap: 70px;
+}
+
+.developer-details {
+    margin: 20px 0px 0 70px;
+    padding-top: 90px;
+    padding-right: 30px;
+    color: white;
+}
+
+.developer-container img {
+    margin: 70px 90px 0 0;
+}
+
+.developer-title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.developer-description {
+    font-size: 18px;
+    font-weight: 400;
+}
+/* information footer design */
+.information {
+    height: 580px;
+    background-color: #151414;
+    margin-top: 100px;
+}
+
+.contact-details {
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 330px;
+    align-items: center;
+}
+
+.contact-title {
+    color: #F8F8F8;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-description {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contact-email {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.contact-phone {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contact-details a {
+    margin-right: 20px;
+}
+/* subscription design */
+.subscription-container {
+    margin-right: 230px;
+    /* border: 2px solid green; */
+}
+
+.subscription-title {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.subscription-container form input[type="text"] {
+    width: 325px;
+    height: 65px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #151414;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+}
+
+.subscription-container form input::placeholder {
+    color: #F3F3F3;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.subscription-container form input[type="submit"] {
+    height: 65px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 35px;
+    background-color: #005FAC;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscription-container form input[type="submit"]:hover {
+    /* after button hover zoom effect */
+    transform: scale(1.1);
+    background-color: #0773cc;
 }
