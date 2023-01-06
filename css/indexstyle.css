@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Work Sans;
 }
-.banner{
+
+.banner {
     background-image: url(../images/banner/banner3.png);
     height: 800px;
     text-align: right;
@@ -11,25 +12,29 @@
     background-size: cover;
     margin-bottom: 130px;
 }
-.banner-container{
+
+.banner-container {
     margin-left: 845px;
     margin-right: 200px;
     padding-top: 215px;
-    
+
 }
-.banner-container .banner-title{
+
+.banner-container .banner-title {
     color: #FFFFFF;
     font-size: 65px;
     font-weight: 700px;
     margin-bottom: 25px;
 }
-.banner-container .banner-description{
+
+.banner-container .banner-description {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 30px;
 }
-.btn-primary{
+
+.btn-primary {
     color: #005FAC;
     font-size: 20px;
     font-weight: 600;
@@ -38,6 +43,79 @@
     border: none;
     border-radius: 5px;
 }
-main{
+
+main {
     padding: 0 205px;
+}
+
+.failure-container {
+    display: flex;
+    gap: 85px;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.failure-details {
+    padding-top: 130px;
+}
+
+.failure-details .failure-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.failure-details .failure-description {
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.failure-details ul li::before {
+    content: '\2714\0020';
+    color: green;
+}
+
+.failure-details ul li {
+    list-style: none;
+    color: #444343;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.plan-container {
+    text-align: center;
+}
+
+.plan-types {
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+}
+
+.plan-items img {
+    margin-bottom: 25px;
+}
+
+.plan-title {
+    color: #151414;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 130px 0 50px 0;
+}
+
+.plan-sub-title {
+    color: #151414;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.plan-description {
+    color: #737272;
+    font-size: 25px;
+    font-weight: 500;
 }
