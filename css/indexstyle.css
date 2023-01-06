@@ -88,6 +88,7 @@ main {
 
 .plan-container {
     text-align: center;
+    margin-bottom: 130px;
 }
 
 .plan-types {
@@ -118,4 +119,20 @@ main {
     color: #737272;
     font-size: 25px;
     font-weight: 500;
+}
+.blending-image{
+    height: 270px;
+    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    background-blend-mode: normal;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.blending-image-container{
+    padding: 60px 0 0 65px;
+}
+.blending-image-title{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
